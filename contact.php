@@ -70,7 +70,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h3 class="mb-4">Kontak Kami</h3>
-                    <form action="proses_pesankontak.php" method="post">
+                    <form action="proses_pesankontak.php" method="post" onsubmit="showThankYouAlert()">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
@@ -186,6 +186,12 @@
         </div>
     </div>
     <!-- Copyright End -->
+
+    <script>
+        function showThankYouAlert() {
+            alert("Terimakasih sudah mengirim form!");
+        }
+    </script>
 </body>
 
 </html>
